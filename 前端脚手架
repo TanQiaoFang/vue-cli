@@ -1,0 +1,58 @@
+vue-cli搭建项目
+一、需要先安装vue与webpack
+
+二、全局安装vue-cli
+
+npm install vue-cli -g
+三、打开一个目录，在这个目录要创建我们的项目，然后我使用git bash（用cmd也可以，但是环境变量要设置对）
+
+vue init webpack test
+这里test指的是项目名，该命令执行后会创建一个名为test的目录，也就是我们所搭建的项目。
+
+接下来会要求你进行一些选项设置，其实就是初始化项目：
+
+? Project name (test)        // 项目名称
+? Project name test
+? Project description (A Vue.js project)        // 项目描述
+? Project description A Vue.js project
+? Author (villelee)        // 作者
+? Author villelee
+? Vue build (Use arrow keys)        // 开始选项设置
+? Vue build standalone
+? Install vue-router? (Y/n) Y        // 安装路由
+? Install vue-router? Yes
+? Use ESLint to lint your code? (Y/n) Y        // 是否使用ESlint统一代码风格
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset (Use arrow keys)
+> Standard (https://github.com/standard/standard)
+? Pick an ESLint preset Airbnb
+? Set up unit tests (Y/n) n        // 是否安装单元测试
+? Set up unit tests No
+? Setup e2e tests with Nightwatch? (Y/n) n        // 是否安装e2e测试
+? Setup e2e tests with Nightwatch? No
+? Should we run `npm install` for you after the project has been created? (recom
+? Should we run `npm install` for you after the project has been created? (recom
+mended) npm
+   vue-cli · Generated "test".
+最后出现如下代码
+
+To get started:
+
+  cd test
+  npm run dev
+说明已经初始化成功，vue-cli已经将必要的依赖包都下好了，切换到该项目就可以正常跑起来了。
+
+$ npm run dev
+
+> test@1.0.0 dev D:\ptest\test
+> webpack-dev-server --inline --progress --config build/webpack.dev.conf.js
+
+ 95% emitting DONE  Compiled successfully in 5547ms11:59:13
+
+ I  Your application is running here: http://localhost:8080
+图片描述
+
+四、这是生成的项目目录结构
+图片描述
+ 
+ 
